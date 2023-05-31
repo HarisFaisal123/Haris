@@ -15,6 +15,8 @@ public class createStudentTable{
         this.dbms = dbms;
         this.dbname = dbname;
     }
+    /** This method must have some documentation
+     * haris will add later */
     public void CreateTable() throws SQLException{
         String create = "create Table STUDENTS " + "(FIRST_NAME varchar(255) NOT NULL, " + "LAST_NAME varchar(255) NOT NULL, " +
                 "AGE int NOT NULL, "+"STUDENT_NUMBER int NOT NULL, "+"PRIMARY KEY (STUDENT_NUMBER))";

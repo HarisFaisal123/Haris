@@ -157,7 +157,8 @@ public class JDBCTutorialUtilities {
       while (warning != null) {
         System.out.println("Message: " + warning.getMessage());
         System.out.println("SQLState: " + warning.getSQLState());
-        System.out.print("Vendor error code: ");
+
+        System.out.print("Application error code: ");
         System.out.println(warning.getErrorCode());
         System.out.println("");
         warning = warning.getNextWarning();
